@@ -35,7 +35,7 @@ brews:
     directory: Formula
 
     # GitHub repository to push the formula to
-    tap:
+    repository:
       owner: Aadithya-J
       name: homebrew-snipbox-cli
 
