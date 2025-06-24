@@ -19,7 +19,7 @@ var viewCmd = &cobra.Command{
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		slug := args[0]
-		url := fmt.Sprintf("http://localhost:3000/api/clips/%s", slug)
+		url := fmt.Sprintf("https://snipbox.vercel.app/api/clips/%s", slug)
 
 		resp, err := http.Get(url)
 		if err != nil {

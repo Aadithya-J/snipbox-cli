@@ -51,7 +51,7 @@ var publishCmd = &cobra.Command{
 
 		jsonPayload, _ := json.Marshal(payload)
 
-		resp, err := http.Post("http://localhost:3000/api/clips", "application/json", bytes.NewBuffer(jsonPayload))
+		resp, err := http.Post("https://snipbox.vercel.app/api/clips", "application/json", bytes.NewBuffer(jsonPayload))
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "Error publishing snip: %v\n", err)
 			os.Exit(1)
@@ -68,7 +68,7 @@ var publishCmd = &cobra.Command{
 		var result map[string]string
 		json.Unmarshal(body, &result)
 
-		fmt.Printf("Snip published: http://localhost:3000/clips/%s\n", result["slug"])
+		fmt.Printf("Snip published: https://snipbox.vercel.app/clips/%s\n", result["slug"])
 	},
 }
 
