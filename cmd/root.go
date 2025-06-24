@@ -8,12 +8,9 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "snipbox",
-	Short: "A CLI for Snipbox",
-	Long:  `A simple and secure text sharing platform with a CLI.`,
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Welcome to Snipbox CLI!")
-	},
+	Use:     "snipbox",
+	Version: "1.0.0",
+	Short:   "A CLI for Snipbox",
 }
 
 func Execute() {
