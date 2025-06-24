@@ -31,12 +31,14 @@ brews:
   -
     # Name of the formula
     name: snipbox-cli
-    
+
+    directory: Formula
+
     # GitHub repository to push the formula to
-    repository:
+    tap:
       owner: Aadithya-J
       name: homebrew-snipbox-cli
-    
+
     # Your project's homepage
     homepage: "https://github.com/Aadithya-J/snipbox-cli"
 
