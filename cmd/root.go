@@ -9,8 +9,12 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:     "snipbox",
-	Version: "1.0.0",
+	Version: "1.0.2",
 	Short:   "A CLI for Snipbox",
+}
+
+func init() {
+	rootCmd.SetVersionTemplate(`{{printf "%s\n" .Version}}`)
 }
 
 func Execute() {
