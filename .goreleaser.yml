@@ -1,4 +1,5 @@
 version: 2
+project_name: snipbox
 # .goreleaser.yml
 # Make sure to check the documentation at https://goreleaser.com
 before:
