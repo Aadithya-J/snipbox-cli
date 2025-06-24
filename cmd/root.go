@@ -9,7 +9,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:     "snipbox",
-	Version: "1.0.3",
+	Version: "1.0.4",
 	Short:   "A CLI for Snipbox",
 }
 
